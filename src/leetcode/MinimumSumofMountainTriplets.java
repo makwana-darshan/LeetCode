@@ -23,4 +23,3 @@ public class MinimumSumofMountainTriplets {
         return minSum == Integer.MAX_VALUE ? -1 : minSum;
     }
 }
-            }
