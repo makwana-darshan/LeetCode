@@ -7,8 +7,9 @@ public class FindtheXORofNumbersWhichAppearTwice {
         for (int num : nums) {
             if (seen[num]) {
                 result ^= num;
+            } else {
+                seen[num] = true;
             }
-            seen[num] = true;
         }
         return result;
     }
