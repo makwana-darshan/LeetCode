@@ -5,12 +5,12 @@ public class FindifDigitGameCanBeWon {
         int aliceSum = 0;
         int bobSum = 0;
         for (int num : nums) {
-            if (num >= 1 && num <= 9) {
+            if (num <= 9) {
                 aliceSum += num;
             } else {
                 bobSum += num;
             }
         }
-        return aliceSum > bobSum;
+        return aliceSum != bobSum;
     }
 }
