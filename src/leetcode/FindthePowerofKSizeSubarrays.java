@@ -6,7 +6,7 @@ public class FindthePowerofKSizeSubarrays {
         int[] result = new int[n - k + 1];
         for (int i = 0; i <= n - k; i++) {
             boolean isValid = true;
-            for (int j = i + 1; j < n + k; j++) {
+            for (int j = i + 1; j < i + k; j++) {
                 if (nums[j] != nums[j - 1] + 1) {
                     isValid = false;
                     break;
