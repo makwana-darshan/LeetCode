@@ -10,13 +10,13 @@ public class FindSpecialSubstringofLengthK {
             if (ch1 == ch) {
                 count++;
             } else {
+                if (count == k) {
+                    return true;
+                }
                 ch = ch1;
                 count = 1;
             }
-            if (count >= k){
-                return true;
-            }
         }
-        return false;
+        return count == k;
     }
 }
