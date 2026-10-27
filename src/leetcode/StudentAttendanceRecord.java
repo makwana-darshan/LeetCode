@@ -1,7 +1,5 @@
 package leetcode;
 
-I
-
 public class StudentAttendanceRecord {
     public boolean checkRecord(String s) {
         if (s.contains("LLL")) {
